@@ -17,8 +17,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func ageAction(_ sender: Any) {
-        let ageDog = Int(tfAge.text!)! * 7
-        lbText.text = "A idade do cachorro é: \(String(ageDog))"
+        var ageDog = Int(tfAge.text!)! * 7
+        if ageDog != nil {
+            lbText.text = "A idade do cachorro é: \(String(ageDog))"
+        } else{
+        print("Erro")
+        }
         
     }
     
