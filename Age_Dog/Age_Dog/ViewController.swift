@@ -15,7 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func AgeAction(_ sender: Any) {
+
+    @IBAction func ageAction(_ sender: Any) {
+        let ageDog = Int(tfAge.text!)! * 7
+        lbText.text = "A idade do cachorro é: \(String(ageDog))"
+        
     }
     
 
